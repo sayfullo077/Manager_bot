@@ -1,0 +1,66 @@
+{% extends "wrapper.html" %} {% load static %} {% block content %}
+<!-- START PAGE HEADING -->
+<div class="app-heading app-heading-bordered app-heading-page">
+  <div class="title">
+    <h1>Topshiriqlarni taxrirlash</h1>
+  </div>
+</div>
+<div class="app-heading-container app-heading-bordered bottom">
+  <ul class="breadcrumb">
+    <li><a href="{% url 'main:home' %}">Bosh sahifa</a></li>
+    <li class="active">Topshiriqlar taxrirlash</li>
+  </ul>
+</div>
+<!-- END PAGE HEADING -->
+<div class="heading-elements hidden-mobile" style="margin-left: 10px">
+  <a href="{% url 'main:task' %}" id="addEmployeeLink">
+    <button class="btn btn-twitter btn-icon-fixed">
+      <span class="fa fa-reorder"></span> Topshiriqlar ro'yxati
+    </button>
+  </a>
+</div>
+<!-- START PAGE CONTAINER -->
+<form method="post" action="{% url 'main:update_task' pk=task.pk %}">
+  {% csrf_token %}
+  <div class="block-content padding-top-20">
+    <div class="row">
+      <div class="col-md-12 col-xs-6">
+        <div class="block block-condensed padding-top-20">
+          <div class="list-group">
+            <div class="list-group-item">
+              <span class="fa fa-list-ul"></span>
+              Topshiriqlar:
+              <label for="id_name"></label>
+              {{ form.name }}
+            </div>
+            <div class="list-group-item">
+              <span class="fa fa-exclamation-circle"></span>
+              Status:
+              <label for="id_task_status">Status:</label>
+              {{ form.task_status }}
+            </div>
+            <div class="list-group-item">
+              <span class="fa fa-users"></span>
+              Xodimlar:
+              <label for="id_employees">Xodimlar:</label>
+              {{ form.employees }}
+            </div>
+          </div>
+          <div class="block-content padding-top-20">
+            <div class="row">
+              <div class="col-md-3 col-md-offset-4">
+                <input
+                  type="submit"
+                  class="btn btn-success btn-clean btn-block btn-xs"
+                  value="Saqlash"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+<!-- END APP WRAPPER -->
+{% endblock %}

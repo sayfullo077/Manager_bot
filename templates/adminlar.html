@@ -1,0 +1,165 @@
+{% extends "wrapper.html" %}
+{% load static %}
+{% block content %}
+                    
+                    <!-- START PAGE HEADING -->
+                    <div class="app-heading app-heading-bordered app-heading-page">                        
+                        <div class="title">
+                            <h1>Adminlar ro'yxati</h1>
+                            <p>Botga a'zo bo'lgan adminlar</p>
+                        </div>               
+                    </div>
+                    <div class="app-heading-container app-heading-bordered bottom">
+                        <ul class="breadcrumb">
+                            <li><a href="{% url 'main:home' %}">Bosh sahifa</a></li>
+                            <li class="active">Adminlar ro'yxati</li>
+                        </ul>
+                    </div>
+                    <!-- END PAGE HEADING -->
+                    <div class="heading-elements hidden-mobile" style="margin-left: 10px;">
+                        <a href="{% url 'main:register' %}" id="addEmployeeLink">
+                            <button class="btn btn-twitter btn-icon-fixed"><span class="icon-user"></span> Admin qo'shish </button>
+                        </a>
+                    </div>
+                    
+                    <!-- START PAGE CONTAINER -->
+                    <div class="container">
+                        
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6">                                
+                                <div class="block block-condensed padding-top-20">
+                                    <div class="contact contact-bordered contact-single">
+                                        <img src="{% static 'assets/images/users/user_1.jpg' %}" alt="">
+                                        <div class="contact-container">
+                                            <a href="#">John Doe</a>
+                                        </div>
+                                        <div class="contact-controls">
+                                            <button class="btn btn-danger btn-clean btn-icon"><span class="fa fa-trash"></span></button>
+                                        </div>
+                                        <div class="contact-controls contact-controls-dir-right">
+                                            <a href="#">
+                                                <button class="btn btn-success btn-clean btn-icon"><span class="fa fa-paper-plane"></span></button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="list-group">                                        
+                                        <div class="list-group-item"><span class="fa fa-suitcase"></span> Lavozimi</div>
+                                        <div class="list-group-item"><span class="fa fa-map-marker"></span> Adresi</div>
+                                        <div class="list-group-item"><span class="fa fa-phone"></span> Telefon raqami</div>
+                                        <div class="list-group-item"><span class="fa fa-envelope"></span> Email pochtasi</div>                                                                                                                                                                
+                                    </div>     
+                                    <div class="block-content padding-top-20">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-info btn-clean btn-block"><span class="icon-pencil"></span>Taxrirlash</button>
+                                            </div>
+                                            
+                                        </div>                                        
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="col-md-3 col-xs-6">
+                                <div class="block block-condensed padding-top-20">
+                                    <div class="contact contact-bordered contact-single">
+                                        <img src="{% static 'assets/images/users/user_2.jpg' %}" alt="">
+                                        <div class="contact-container">
+                                            <a href="#">Juan Obrien</a>
+                                        </div>
+                                        <div class="contact-controls">
+                                            <button class="btn btn-danger btn-clean btn-icon"><span class="fa fa-trash"></span></button>
+                                        </div>
+                                        <div class="contact-controls contact-controls-dir-right">
+                                            <button class="btn btn-success btn-clean btn-icon"><span class="fa fa-paper-plane"></span></button>
+                                        </div>
+                                    </div>
+                                    <div class="list-group">                                        
+                                        <div class="list-group-item"><span class="fa fa-suitcase"></span> Lavozimi</div>
+                                        <div class="list-group-item"><span class="fa fa-map-marker"></span> Adresi</div>
+                                        <div class="list-group-item"><span class="fa fa-phone"></span> Telefon raqami</div>
+                                        <div class="list-group-item"><span class="fa fa-envelope"></span> Email pochtasi</div>                                                                                                                                                                
+                                    </div>     
+                                    <div class="block-content padding-top-20">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-info btn-clean btn-block"><span class="icon-pencil"></span>Taxrirlash</button>
+                                            </div>
+                                            
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-6">
+                                <div class="block block-condensed padding-top-20">
+                                    <div class="contact contact-bordered contact-single">
+                                        <img src="{% static 'assets/images/users/user_3.jpg' %}" alt="">
+                                        <div class="contact-container">
+                                            <a href="#">Erin Stewart</a>
+                                        </div>
+                                        <div class="contact-controls">
+                                            <button class="btn btn-danger btn-clean btn-icon"><span class="fa fa-trash"></span></button>
+                                        </div>
+                                        <div class="contact-controls contact-controls-dir-right">
+                                            <button class="btn btn-success btn-clean btn-icon"><span class="fa fa-paper-plane"></span></button>
+                                        </div>
+                                    </div>
+                                    <div class="list-group">                                        
+                                        <div class="list-group-item"><span class="fa fa-suitcase"></span> Lavozimi</div>
+                                        <div class="list-group-item"><span class="fa fa-map-marker"></span> Adresi</div>
+                                        <div class="list-group-item"><span class="fa fa-phone"></span> Telefon raqami</div>
+                                        <div class="list-group-item"><span class="fa fa-envelope"></span> Email pochtasi</div>                                                                                                                                                                
+                                    </div>     
+                                    <div class="block-content padding-top-20">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-info btn-clean btn-block"><span class="icon-pencil"></span>Taxrirlash</button>
+                                            </div>
+                                            
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-6">
+                                <div class="block block-condensed padding-top-20">
+                                    <div class="contact contact-bordered contact-single">
+                                        <img src="{% static 'assets/images/users/user_4.jpg' %}" alt="">
+                                        <div class="contact-container">
+                                            <a href="#">Jeff Kuhn</a>
+                                        </div>
+                                        <div class="contact-controls">
+                                            <button class="btn btn-danger btn-clean btn-icon"><span class="fa fa-trash"></span></button>
+                                        </div>
+                                        <div class="contact-controls contact-controls-dir-right">
+                                            <button class="btn btn-success btn-clean btn-icon"><span class="fa fa-paper-plane"></span></button>
+                                        </div>
+                                    </div>
+                                    <div class="list-group">                                        
+                                        <div class="list-group-item"><span class="fa fa-suitcase"></span> Lavozimi</div>
+                                        <div class="list-group-item"><span class="fa fa-map-marker"></span> Adresi</div>
+                                        <div class="list-group-item"><span class="fa fa-phone"></span> Telefon raqami</div>
+                                        <div class="list-group-item"><span class="fa fa-envelope"></span> Email pochtasi</div>                                                                                                                                                                
+                                    </div>     
+                                    <div class="block-content padding-top-20">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="btn btn-info btn-clean btn-block"><span class="icon-pencil"></span>Taxrirlash</button>
+                                            </div>
+                                            
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <!-- END PAGE CONTAINER -->
+                    
+                </div>
+                <!-- END APP CONTENT -->
+                                
+            </div>
+            
+            <!-- APP OVERLAY -->
+            <div class="app-overlay"></div>
+            <!-- END APP OVERLAY -->
+        </div>        
+        <!-- END APP WRAPPER -->                
+        {% endblock %}
